@@ -1,10 +1,12 @@
 ﻿
 
-#include <iostream>
+#include <string>
+#include"person.h"
 using namespace std;
 int main()
 {
-    cout << "Hello World!\n";
+    
+    person person1();
 }
 
 
