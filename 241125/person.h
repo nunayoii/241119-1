@@ -10,7 +10,7 @@ private:
 	string gender;
 	string birthdate;
 public:
-	person(const string&id, const string&lastName, const string&firstName, const string&gender, const string&birthDate);
+	person(const string&id, const string&lastname, const string&firstname, const string&gender, const string&birthdate);
 
 	string getid()const;
 	string getlastname()const;
@@ -18,6 +18,13 @@ public:
 	string getgender()const;
 	string getbirthdate()const;
 	
+	void setid(const string& id);
+	void setlastname(const string& lastname);
+	void setfirstname(const string& firstname);
+	void setgender(const string& gender);
+	void setbirthdate(const string& birthdate);
+
+	void display()const;
 
 };
 

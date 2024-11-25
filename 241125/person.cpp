@@ -1,5 +1,6 @@
 #include "person.h"
 #include<string>
+#include <iostream>
 using namespace std;
 
 
@@ -36,4 +37,38 @@ string person::getgender() const
 string person::getbirthdate() const
 {
 	return birthdate;
+}
+
+void person::setid(const string& id)
+{
+	this->id = id;
+}
+
+void person::setlastname(const string& lastname)
+{
+	this->lastname = lastname;
+}
+
+void person::setfirstname(const string& firstname)
+{
+	this->firstname = firstname;
+}
+
+void person::setgender(const string& gender)
+{
+	this->gender = gender;
+}
+
+void person::setbirthdate(const string& birthdate)
+{
+	this->birthdate = birthdate;
+}
+
+void person::display() const
+{
+	cout << "ID: " << id << endl;
+	cout << "姓: " << lastname << endl;
+	cout << "名: " << firstname << endl;
+	cout << "性別: " << gender << endl;
+	cout << "生日: " << birthdate ;
 }
